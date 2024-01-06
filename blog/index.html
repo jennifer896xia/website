@@ -1,0 +1,109 @@
+---
+layout: null
+title: Jekyll Theme - Blog Page - Massively
+description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.
+sitemap:
+    priority: 1.0
+    lastmod: 2017-11-02
+    changefreq: weekly
+---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+						
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+					<!-- Post -->
+					<section class="posts">
+						{% for post in paginator.posts %}
+							<article>
+								<header>
+									<span class="date">{{ post.date | date_to_string }}</span>
+									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+								</header>
+								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+								<p>{{ post.excerpt }}</p>
+								<ul class="actions">
+									<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+								</ul>
+							</article>
+						{% assign last_index = forloop.index %}
+
+						{% endfor %}
+						{% assign is_odd = last_index | modulo: 2 %}
+						{% if is_odd == 1 %}
+							<article></article>
+						{% endif %}
+					</section>
+
+		
+					<!-- pagination -->
+					{% if paginator.total_pages > 1 %}
+					<footer>
+					<div class="pagination">
+						{% if paginator.previous_page %}
+							<a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+						{% else %}
+							<span>&laquo; Prev</span>
+						{% endif %}
+					
+						{% for page in (1..paginator.total_pages) %}
+							{% if page == paginator.page %}
+								<span class="page_number ">{{ page }}</span>
+							{% elsif page == 1 %}
+								<a href="{{ '/blog/' | relative_url }}">{{ page }}</a>
+							{% else %}
+								<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+							{% endif %}
+						{% endfor %}
+					
+						{% if paginator.next_page %}
+							<a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+						{% else %}
+							<span>Next &raquo;</span>
+						{% endif %}
+					</div>
+					</footer>
+					{% endif %}
+
+
+				</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>

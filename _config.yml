@@ -1,5 +1,5 @@
 # Site
-title:              Massively
+title:              Jennifer Xia
 bio:                'Jekyll version of the Massively theme by HTML5UP'
 description:        "Jekyll version of the Massively theme by HTML5UP"
 locale:             en_US
@@ -17,9 +17,10 @@ instagram:          default
 github:             default
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+location:           Great Falls, VA
+phone:              (703) 662-1887
+email:              jennifer.web@fxia.com
+slapform_id:        21IPiYdIQ9VH6xxnZjer8pV3okw2 # change this to your Slapform ID to receive free emails for your contact submissions via Slapform.com
 
 # Other
 background_image:   /images/bg.jpg
@@ -49,6 +50,8 @@ mathjax:            true
 sass:
   sass_dir:         _sass
   style:            compressed
+plugins:
+  - jekyll-paginate
 
 # Gems
 gems:
