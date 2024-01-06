@@ -17,6 +17,7 @@
 		width: calc(100% - #{_size(padding) * 2});
 		max-width: _size(wrapper);
 		z-index: 2;
+		border-top: solid 2px _palette(alt, border);
 
 		> section {
 			@include vendor('flex-basis', '50%');
