@@ -12,8 +12,8 @@ Let's hop on the shuttle to our first destination, the vast and magical Grand Ca
 Prepare for a stunning view of the Grand Canyon as we enter the two-hour hike from South Kaibab Trail to Cedar Ridge. 
 Together, we can explore the beauty of the Canyon right by our fingertips. What are you waiting for? Let's go!
 
-The hike down is easy because of the consistent downhill. Watch out! Mules incoming. Perhaps you can compare and contrast the differences between horses, donkeys, and mules.
 <span class="image left" style="max-width:400px"><img src="{{ "/images/mule.jpg" | absolute_url }}" alt="Mule on Grand Canyon trail" /></span>
+The hike down is easy because of the consistent downhill. Watch out! Mules incoming. Perhaps you can compare and contrast the differences between horses, donkeys, and mules.
 
 ## Features
 Wow, what a mouth-gaping view! There are several viewpoints throughout the hike, Ooh-Aah Point, Cedar Ridge, and Skeleton Point. We stopped at the Cedar Ridge point.
