@@ -2,27 +2,23 @@
 layout: post
 title:  "The Grand Canyon, Arizona"
 date:   2023-12-21
-excerpt: "Grand Canyon's giant yawn makes you squint, shrink, and squeal with glee!"
+excerpt: "Grand Canyon's giant natural formations make you squint, savor, and squeal with glee!"
 image: "/images/grand-canyon.jpg"
 ---
 
-## How to Use This Theme
-Just go ahead and read up on [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
+## Hiking in the Grand Canyon
+Let's hop on the shuttle to our first destination, the vast and magical Grand Canyon! 
 
-Download this repository [here](https://github.com/iwiedenm/jekyll-theme-massively) and save it to any folder you want.
+Prepare for a stunning view of the Grand Canyon as we enter the two-hour hike from South Kaibab Trail to Cedar Ridge. 
+Together, we can explore the beauty of the Canyon right by our fingertips. What are you waiting for? Let's go!
 
-Open a terminal window or a command line and ```cd``` to that location.
-
-Then enter: ```bundle exec jekyll serve```. You can now access your new Jekyll site from [http://127.0.0.1:4000/](http://127.0.0.1:4000/). Have fun exploring your new site!
+The hike down is easy because of the consistent downhill. Watch out! Mules incoming. Perhaps you can compare and contrast the differences between horses, donkeys, and mules.
+<span class="image left" style="max-width:400px"><img src="{{ "/images/mule.jpg" | absolute_url }}" alt="Mule on Grand Canyon trail" /></span>
 
 ## Features
-### Auto-Generating Sitemap
-The sitemap is auto generated! Just simply change the front matter of each site. It looks like so...
-```
-sitemap:
-    priority: 0.7
-    lastmod: 2017-11-02
-    changefreq: weekly
-```
-### Formspring integration
-The contact form below each page on the footer actually collects information! Just change your email address in the ```_config.yml``` file!
+Wow, what a mouth-gaping view! There are several viewpoints throughout the hike, Ooh-Aah Point, Cedar Ridge, and Skeleton Point. We stopped at the Cedar Ridge point.
+As usual, remember to stop whenever it is neccasary. Don't forget to eat, take pictures, and replenish your energy!
+<span class="image left" style="max-width:400px"><img src="{{ "/images/GrandCanyon.jpg" | absolute_url }}" alt="View of the Grand Canyon" /></span>
+
+One thing for sure: the hike upwards is ten times harder. We finally climbed back to the starting point of the South Kaibab Trail. What magical views we had in the Grand Canyon!
+Don't forget to visit daily for more updates and fun expierences with me!
