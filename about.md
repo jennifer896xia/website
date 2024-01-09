@@ -13,3 +13,5 @@ sitemap:
 
 This space is still growing, just like me! Come back soon to see what cool stuff I'll fill it with.
 
+### My secret
+Sshhh.... [here](/asdf).

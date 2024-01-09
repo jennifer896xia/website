@@ -1,0 +1,106 @@
+---
+layout: null
+title: 404 Page Not Found
+permalink: /404.html
+---
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+            <h1>404</h1>
+						<h2>Opps! That page can't be found.</h2>
+						<p>Anyone see a needle? In the ocean?</p>
+
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>Wanna be world explorers together?</h2>
+								</header>
+								<a href="javascript:void(0);" class="image main" style="cursor: default"><img src="{{ "/images/space.jpg" | absolute_url }}" alt="" /></a>
+                <p>We can hop on planes like superheroes and zoom to faraway lands! Imagine building sandcastles on sparkling beaches, spotting colorful fish while snorkeling in coral reefs, and even riding camels across sandy deserts! We can meet friendly animals, taste yummy new foods, and learn cool things about different cultures. It'll be like stepping into a giant storybook, with you as the star adventurer! So, pack your curiosity, grab your sense of wonder, and let's go chase rainbows around the world! ✈️
+								 </p>
+							</article>
+
+							<!-- Posts -->
+							<section class="posts">
+                {% for post in site.posts limit: 6 %}
+									<article>
+										<header>
+											<span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+											<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+										</header>
+										<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+										<p>{{ post.excerpt }}</p>
+										<ul class="actions">
+											<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+										</ul>
+									</article>
+                {% endfor %}
+								{%assign is_odd = site.posts.size | modulo: 2 %}
+								{% if site.posts.size < 6 and is_odd == 1 %}
+								<article></article>
+								{% endif %}	
+							</section>
+
+						<!-- Footer -->
+							<footer>
+                <ul class="actions">
+                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">All Blogs</a></li>
+                </ul>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+		<!-- Scripts -->
+		{% include scripts-main.html %}
+    {% include tracking.html %}
+    <script>
+		// some fun with 404 page
+		setTimeout(function() {
+			$("body #wrapper>.bg ").css(
+				'backgroundImage',
+				'url("/images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/404.jpg")'
+			)}, 1);
+		</script>
+	</body>
+</html>
